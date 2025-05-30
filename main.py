@@ -55,7 +55,7 @@ while True:
     for img in containers:
         src = img.get_attribute("src")
         # Modified condition to always be False for testing cycling through boxes
-         if "box_pic_with_shadow" in src:
+        if "box_pic_with_shadow" in src:
             print("✅ Found unlocked container!")
 
             # Scroll + JavaScript click
