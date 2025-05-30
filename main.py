@@ -30,6 +30,8 @@ main_url = f"https://www.popmart.com/us/pop-now/set/{set_id}"
 driver.get(main_url)
 quick_wait = WebDriverWait(driver, 2, poll_frequency=0.1)
 
+has_played_song = False
+
 # Accept the privacy policy if prompted
 try:
     accept_button = quick_wait.until(
@@ -76,6 +78,10 @@ while True:
                 )
                 driver.execute_script("arguments[0].click();", add_to_bag_button)
                 print("🛒 Clicked 'ADD TO BAG'")
+                if not has_played_song:
+                    driver.execute_script("window.open('https://www.youtube.com/watch?v=WRc4lH6_bEU', '_blank');")
+                    has_played_song = True
+
             except Exception as e:
                 print(f"❌ Failed to click 'ADD TO BAG': {e}")
 
