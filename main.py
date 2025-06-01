@@ -43,7 +43,7 @@ except:
 
 while True:
     print("🔍 Checking current box...")
-    driver.get(main_url)
+   # driver.get(main_url)
 
     # Wait for containers to load
     try:
