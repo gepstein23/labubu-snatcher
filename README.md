@@ -1,4 +1,4 @@
-# 🧸 Pop-Now Box Watcher (Selenium) — `main.py`
+# 🧸 Labubu Snatcher (Selenium) — `main.py`
 
 A tiny automation buddy that keeps an eye on a Pop-Now set page, flips through boxes, and pounces the moment it spots an “unlocked” container — then tries to click **ADD TO BAG**. 🛒✨
 
